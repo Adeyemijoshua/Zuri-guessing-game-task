@@ -3,7 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1>Guessing Game</h1>
+      <p>Guess the number between 1 and 100</p>
+      <input
+        type="text"
+        id="guessInput"
+        placeholder="Enter your guess"
+        maxlength="3"
+      />
+      <button id="guessButton">Guess</button>
+      <p id="message"></p>
+      <p id="attempts"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
