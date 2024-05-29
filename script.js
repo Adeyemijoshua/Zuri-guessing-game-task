@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const guess = parseInt(userGuess);
-    attemptsLeft--;
+    attemptsLeft -= 1;
 
     if (guess === randomNumber) {
       message.textContent = "Congratulations! You guessed the correct number!";
@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       message.textContent = `Sorry, you've used all your attempts. The correct number was ${randomNumber}.`;
       guessButton.disabled = true;
       guessInput.disabled = true;
+      attempts.textContent = `Attempts left: 0`;
     }
 
     guessInput.value = "";
